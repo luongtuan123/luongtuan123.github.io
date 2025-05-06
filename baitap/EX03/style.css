@@ -1,0 +1,169 @@
+/* Reset các thuộc tính mặc định */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Định dạng chung cho body */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container chung cho toàn bộ trang */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+#branding h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#branding .highlight {
+    color: #e8491d;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e8491d;
+}
+
+/* Phần giới thiệu */
+#showcase {
+    background: url('./img/showcase.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#showcase h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+#showcase p {
+    font-size: 1.2rem;
+}
+
+/* Phần đăng ký nhận thông báo */
+#newsletter {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#newsletter h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#newsletter input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    width: 300px;
+    border: none;
+    border-radius: 5px;
+}
+
+#newsletter button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #e8491d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#newsletter button:hover {
+    background-color: #333;
+}
+
+/* Phần dịch vụ */
+#boxes {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.box img {
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
